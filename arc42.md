@@ -40,14 +40,16 @@ architects and development team must consider. These include
 
 <div class="formalpara-title">
 
-**Contents**
+**Main Features**
 
 </div>
 
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
+Die App soll 24/7 laufen und verwendbar sein.
+Nutzer sollen sich registrieren können.
+Nutzer sollen sich einloggen können.
+Nutzer sollen Bilder mit Beschreibungen hochladen können.
+Nutzer sollen Bilder kommentieren und liken können.
+
 
 <div class="formalpara-title">
 

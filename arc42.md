@@ -66,10 +66,9 @@ Motivation: Für Benutzer einfach zu bedienen, für eine positive Benutzererfahr
 <div class="formalpara-title">
 
 **2.**
+</div>
 Quality: Leistung<br>
 Motivation: Die App soll schnell laufen und nicht lange laden, flüssig Bilder hochladen <br>
-</div>
-
 
 <div class="formalpara-title">
 

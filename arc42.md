@@ -44,34 +44,11 @@ architects and development team must consider. These include
 
 </div>
 
-Die App soll 24/7 laufen und verwendbar sein.
-Nutzer sollen sich registrieren können.
-Nutzer sollen sich einloggen können.
-Nutzer sollen Bilder mit Beschreibungen hochladen können.
-Nutzer sollen Bilder kommentieren und liken können.
-
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
-
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
+Die App soll 24/7 laufen und verwendbar sein. <br>
+Nutzer sollen sich registrieren können. <br>
+Nutzer sollen sich einloggen können. <br>
+Nutzer sollen Bilder mit Beschreibungen hochladen können. <br>
+Nutzer sollen Bilder kommentieren und liken können. <br>
 
 See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
 arc42 documentation.

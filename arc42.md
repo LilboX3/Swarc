@@ -773,51 +773,19 @@ documentation.
 
 # Architecture Decisions
 
-<div class="formalpara-title">
+- Bildspeicherung und -lieferung <br>
+Alternative: Bilder in einer Datenbank speichern<br>
+Entscheidung: Bilder in einem Cloud-basierten Speicherdienst (AWS, Google cloud..) lagern<br>
 
-**Contents**
+- Integration Software Drittanbieter (Pixlr)<br>
+Alternative: Eigene Bildbearbeitungssoftware entwickeln<br>
+Entscheidung: Integration in die Pixlr-API, damit Benutzer die Anwendung nicht verlassen zur Bildbearbeitung<br>
 
-</div>
+- Umsetzung des Abonnementmodells<br>
+Alternative: Umsetzung eines Abonnementmodells von Drittanbietern<br>
+Entscheidung: Eigenes benutzerdefiniertes Abonnementmodell entwickeln<br>
 
-Important, expensive, large scale or risky architecture decisions
-including rationales. With "decisions" we mean selecting one alternative
-based on given criteria.
 
-Please use your judgement to decide whether an architectural decision
-should be documented here in this central section or whether you better
-document it locally (e.g. within the white box template of one building
-block).
-
-Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Stakeholders of your system should be able to comprehend and retrace
-your decisions.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   ADR ([Documenting Architecture
-    Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    for every important decision
-
--   List or table, ordered by importance and consequences or:
-
--   more detailed in form of separate sections per decision
-
-See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
-arc42 documentation. There you will find links and examples about ADR.
 
 <div style="page-break-after: always;"></div>
 

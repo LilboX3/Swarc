@@ -267,9 +267,6 @@ and input/output.
 
 </div>
 
-A short summary and explanation of the fundamental decisions and
-solution strategies, that shape system architecture. It includes
-
 -   Skalierbarkeit: Es wird eine Notwendigkeit geben, große Nutzerzahlen zu bewältigen. Durch Microservices können einzelne Komponenten der Anwendung unabhängig voneinander skaliert werden. 
 
 -   Kontinuierliche Bereitstellung und Auslieferung: Wenn eine neue Funktion im Community-Bereich der Anwendung hinzugefügt wird, kann sie bereitgestellt werden, ohne die gesamte Anwendung erneut bereitstellen zu müssen.

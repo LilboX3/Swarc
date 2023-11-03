@@ -1,0 +1,7 @@
+What is our Image Sharing App?
+Main features
+Die App soll 24/7 laufen und verwendbar sein.
+Nutzer sollen sich registrieren können.
+Nutzer sollen sich einloggen können.
+Nutzer sollen Bilder mit Beschreibungen hochladen können.
+Nutzer sollen Bilder kommentieren und liken können.

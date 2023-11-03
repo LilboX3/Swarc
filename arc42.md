@@ -905,41 +905,10 @@ Tabular or free form text.
 <div style="page-break-after: always;"></div>
 
 # Risks and Technical Debts
+- Datenkonsistenz: Daten sind auf verschiedene Dienste verteilt, weshalb die Sicherstellung von Datenkonsistenz eine Herausforderung darstellen kann.
+- Netzwerklatenz: Dienste müssen über ein Netzwerk kommunizieren, was zu geringfügigen Verzögerungen führen kann und sich auf die Leistung der Anwendung auswirken kann.
+- Komplexität: Die Verwaltung mehrerer Dienste ist komplex: Überwachung, Protokollierung und Benachrichtigungssysteme sind erforderlich, um einen reibungslosen Betrieb sicherzustellen.
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-A list of identified technical risks or technical debts, ordered by
-priority
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
 
 <div style="page-break-after: always;"></div>
 

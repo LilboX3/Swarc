@@ -91,11 +91,11 @@ to the architecture and its documentation.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
-| *\Benutzer* | *\<Contact-1>* | *\Individuen die in der App Bilder hochladen, kommentieren und liken.* |
-| *\Admin* | *\<Contact-2>* | *\Verwalten das Projekt und haben Zugang zu administrativen Funktionen* |
-| *\Entwickler* | *\<Contact-3>* | *\Das Team, das die App entwickelt und aufrechterhält.* |
-| *\Business Stakeholder* | *\<Contact-4>* | *\Unternehmensleiter, Manager die in den Erfolg der App investieren* |
-| *\Support Teams* | *\<Contact-5>* | *\Anfragen und Probleme von Kunden lösen* |
+| *Benutzer* | *\<Contact-1>* | *Individuen die in der App Bilder hochladen, kommentieren und liken.* |
+| *Admin* | *\<Contact-2>* | *Verwalten das Projekt und haben Zugang zu administrativen Funktionen* |
+| *Entwickler* | *\<Contact-3>* | *Das Team, das die App entwickelt und aufrechterhält.* |
+| *Business Stakeholder* | *\<Contact-4>* | *Unternehmensleiter, Manager die in den Erfolg der App investieren* |
+| *Support Teams* | *\<Contact-5>* | *Anfragen und Probleme von Kunden lösen* |
 
 <div style="page-break-after: always;"></div>
 

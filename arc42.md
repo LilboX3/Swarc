@@ -822,23 +822,6 @@ arc42 documentation.
 
 <img src="quality_tree.png"></img>
 
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The quality tree is a high-level overview of the quality goals and
-requirements:
-
--   tree-like refinement of the term "quality". Use "quality" or
-    "usefulness" as a root
-
--   a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the
-following section.
-
 ## Quality Scenarios
 
 <div class="formalpara-title">
@@ -865,27 +848,12 @@ For architects, two kinds of scenarios are important:
     immediate environment. Example: Additional functionality is
     implemented or requirements for a quality attribute change.
 
-<div class="formalpara-title">
 
-**Motivation**
 
-</div>
+- Leistung: Tester öffnet die App und will eine schnellere Ladezeit zum anschauen der Bilder bis zum nächsten Sprint.
+- Benutzerfreundlichkeit: Ein User will das beim öffnen der App direkt alle wichtigen Features sehen und benutzen können (hoch priorisiert).
+- Datenschutz: Der Teamleiter will den Schutz der User gewährleisten, da es sonst zu rechtlichen Problemen kommen könnte. Dies geschieht mittels implementierung der dazu passenden Liabraries und Funktionen bis zum Ende des Projektes.
 
-Scenarios make quality requirements concrete and allow to more easily
-measure or decide whether they are fulfilled.
-
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2) more
-precisely down to a level of scenarios that can be discussed and
-evaluated.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Tabular or free form text.
 
 <div style="page-break-after: always;"></div>
 

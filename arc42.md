@@ -491,6 +491,7 @@ Specifies the internal structure of *building block x.1*.
 
 </div>
 <img src="Runtime_view.png"></img>
+
 The runtime view describes concrete behavior and interactions of the
 system’s building blocks in form of scenarios from the following areas:
 
@@ -834,8 +835,7 @@ Method) with quality/evaluation scenarios as leafs.
 
 </div>
 
-The tree structure with priorities provides an overview for a sometimes
-large number of quality requirements.
+<img src="quality_tree.png"></img>
 
 <div class="formalpara-title">
 

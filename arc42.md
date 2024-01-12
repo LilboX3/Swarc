@@ -820,21 +820,6 @@ arc42 documentation.
 
 ## Quality Tree
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis
-Method) with quality/evaluation scenarios as leafs.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
 <img src="quality_tree.png"></img>
 
 <div class="formalpara-title">

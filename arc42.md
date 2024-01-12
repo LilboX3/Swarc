@@ -490,7 +490,7 @@ Specifies the internal structure of *building block x.1*.
 **Contents**
 
 </div>
-
+<img src="Runtime_view.png"></img>
 The runtime view describes concrete behavior and interactions of the
 system’s building blocks in form of scenarios from the following areas:
 

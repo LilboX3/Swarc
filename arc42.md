@@ -101,40 +101,24 @@ to the architecture and its documentation.
 
 # Architecture Constraints
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
+- Microservices Architektur:
+Skalierbare und flexible Architektur, je nach Nutzernzahl und Beliebtheit erweiterbar
+- Implementierung in Java und Swift:
+Damit Software auf iOS und Android Geräte zugeschnitten ist
+- Lizenzierung von Drittanbieter Software:
+Integrierung der Pixlr-Bildbearbeitung in die App
+- Datenschutz:
+App speichert sensible Daten, die von Dritten nur beschränkt sichtbar sein sollen
+- Datenverschlüsselung:
+Sensible Daten zwischen den Kommunikationsschnittstellen gehören verschlüsselt
 
 <div class="formalpara-title">
 
-**Form**
+**What are constraints**
 
 </div>
+Any requirement that constrains software architects in their freedom of design and implementation decisions or decision about the development process
 
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
 
 <div style="page-break-after: always;"></div>
 
@@ -848,7 +832,7 @@ For architects, two kinds of scenarios are important:
     immediate environment. Example: Additional functionality is
     implemented or requirements for a quality attribute change.
 
-
+**TODO: more quality scenarios?**
 
 - Leistung: Tester öffnet die App und will eine schnellere Ladezeit zum anschauen der Bilder bis zum nächsten Sprint.
 - Benutzerfreundlichkeit: Ein User will das beim öffnen der App direkt alle wichtigen Features sehen und benutzen können (hoch priorisiert).

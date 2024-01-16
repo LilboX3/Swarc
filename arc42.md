@@ -143,35 +143,22 @@ vom technischen Kontext (Kanäle, Protokolle, Hardware).
 
 <div class="formalpara-title">
 
-**Motivation**
+**Was stellt es dar?**
 
 </div>
 
 All stakeholders should understand which data are exchanged with the
 environment of the system.
+ALle Daten, die mit dem System ausgetauscht werden
+<img src="business_context.png">
 
-<div class="formalpara-title">
 
-**Form**
-
-</div>
-
-All kinds of diagrams that show the system as a black box and specify
-the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table. The title of the
-table is the name of your system, the three columns contain the name of
-the communication partner, the inputs, and the outputs.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of external domain interfaces>**
 
 ## Technical Context
 
 <div class="formalpara-title">
 
-**Contents**
+**Was stellt es dar?**
 
 </div>
 
@@ -180,31 +167,8 @@ system to its environment. In addition a mapping of domain specific
 input/output to the channels, i.e. an explanation which I/O uses which
 channel.
 
-<div class="formalpara-title">
 
-**Motivation**
-
-</div>
-
-Many stakeholders make architectural decision based on the technical
-interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels
-and input/output.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of technical interfaces>**
-
-**\<Mapping Input/Output to Channels>**
+<img src="technical_context.png">
 
 <div style="page-break-after: always;"></div>
 

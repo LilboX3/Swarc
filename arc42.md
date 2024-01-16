@@ -126,55 +126,20 @@ Any requirement that constrains software architects in their freedom of design a
 
 <div class="formalpara-title">
 
-**Contents**
+**Inhalt**
 
 </div>
 
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
+Systemumfang und Kontext grenzen das System von seinen 
+Kommunikationspartnern (benachbarte Systeme und Benutzer, = Kontext des Systems) ab. 
+Sie spezifizieren dabei die externen Schnittstellen.
 
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
+Wenn nötig, unterscheidet man den Geschäftskontext (domänenspezifische Eingaben und Ausgaben) 
+vom technischen Kontext (Kanäle, Protokolle, Hardware).
 
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
 
 ## Business Context
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Specification of **all** communication partners (users, IT-systems, …)
-with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication
-protocols.
 
 <div class="formalpara-title">
 

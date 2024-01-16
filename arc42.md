@@ -102,15 +102,15 @@ to the architecture and its documentation.
 # Architecture Constraints
 
 - Microservices Architektur:
-Skalierbare und flexible Architektur, je nach Nutzernzahl und Beliebtheit erweiterbar
+<br> Skalierbare und flexible Architektur, je nach Nutzernzahl und Beliebtheit erweiterbar
 - Implementierung in Java und Swift:
-Damit Software auf iOS und Android Geräte zugeschnitten ist
+<br> Damit Software auf iOS und Android Geräte zugeschnitten ist
 - Lizenzierung von Drittanbieter Software:
-Integrierung der Pixlr-Bildbearbeitung in die App
+<br> Integrierung der Pixlr-Bildbearbeitung in die App
 - Datenschutz:
-App speichert sensible Daten, die von Dritten nur beschränkt sichtbar sein sollen
+<br> App speichert sensible Daten, die von Dritten nur beschränkt sichtbar sein sollen
 - Datenverschlüsselung:
-Sensible Daten zwischen den Kommunikationsschnittstellen gehören verschlüsselt
+<br> Sensible Daten zwischen den Kommunikationsschnittstellen gehören verschlüsselt
 
 <div class="formalpara-title">
 

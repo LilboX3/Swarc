@@ -579,101 +579,36 @@ Please copy the structure from level 1 for each selected element.
 TODO: add cross cutting concepts
 <div class="formalpara-title">
 
-**Content**
+**Inhalt**
 
 </div>
+Lösungen und Regulierungen die in mehreren Teilen des Systems wichtig sind, also zu verschiedenen Blöcken gehören.
 
-This section describes overall, principal regulations and solution ideas
-that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They can
-include many different topics, such as
+## *Development Concept*
 
--   models, especially domain models
+- Agiles Development: <br>
+Verwendung agiler Entwicklungsmethoden, um auf Änderungen der Anforderungen flexibel reagieren zu können.
 
--   architecture or design patterns
+## *Architecture and Design Patterns*
 
--   rules for using specific technology
+- Microservice Architektur: <br>
+Anwendung unabhängiger Mikrodienste, damit das Projekt skalierbar und flexibel bleibt.
+Da die Firma international vertreten ist, hat sie genug Ressourcen, um mit Mikrodiensten zu entwickeln.
 
--   principal, often technical decisions of an overarching (=
-    cross-cutting) nature
+## *Safety and Security Concepts*
 
--   implementation rules
+- Authentifizierung und Authorisation: <br>
+Registrierte Benutzer können sich über ihre Benutzerdaten in ihren Account einloggen.
 
-<div class="formalpara-title">
+- Automatische regelmäßige Sicherungen: <br>
+Die App sichert automatisch regelmäßig alle Benutzerdaten, hochgeladenen Bilder und relevanten Metadaten,
+um Datenverlust zu verhindern.
 
-**Motivation**
+## *User Experience Concepts*
 
-</div>
-
-Concepts form the basis for *conceptual integrity* (consistency,
-homogeneity) of the architecture. Thus, they are an important
-contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks,
-e.g. security or safety.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The form can be varied:
-
--   concept papers with any kind of structure
-
--   cross-cutting model excerpts or scenarios using notations of the
-    architecture views
-
--   sample implementations, especially for technical concepts
-
--   reference to typical usage of standard frameworks (e.g. using
-    Hibernate for object/relational mapping)
-
-<div class="formalpara-title">
-
-**Structure**
-
-</div>
-
-A potential (but not mandatory) structure for this section could be:
-
--   Domain concepts
-
--   User Experience concepts (UX)
-
--   Safety and security concepts
-
--   Architecture and design patterns
-
--   "Under-the-hood"
-
--   development concepts
-
--   operational concepts
-
-Note: it might be difficult to assign individual concepts to one
-specific topic on this list.
-
-![Possible topics for crosscutting
-concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
-
-See [Concepts](https://docs.arc42.org/section-8/) in the arc42
-documentation.
-
-## *\<Concept 1>*
-
-*\<explanation>*
-
-## *\<Concept 2>*
-
-*\<explanation>*
-
-…
-
-## *\<Concept n>*
-
-*\<explanation>*
+- Intuitive Navigation: <br>
+Die App soll intuitiv und einfach bedienbar sein, damit neue Benutzer
+auch bei unserer App bleiben und nicht frustriert sind.
 
 <div style="page-break-after: always;"></div>
 
@@ -723,9 +658,8 @@ Mit dem Baum werden diese übersichtlich visualisiert.
 
 </div>
 Qualitätsanforderungen konkretisiert: <br>
-Was mit dem System passiert, wenn ein Reiz im System ankommt. Geordnet nach Priorität (oben ist das wichtigste).
+Was mit dem System passiert, wenn ein Reiz im System ankommt. Geordnet nach Priorität (oben ist das wichtigste).<br>
 
-**TODO: more quality scenarios?**
 
 - Datenschutz: <br> Der Teamleiter will den Schutz der User gewährleisten, da es sonst zu rechtlichen Problemen kommen könnte. Dies geschieht mittels implementierung der dazu passenden Liabraries und Funktionen bis zum Ende des Projektes.
 

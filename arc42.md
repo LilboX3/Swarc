@@ -147,10 +147,12 @@ vom technischen Kontext (Kanäle, Protokolle, Hardware).
 
 </div>
 
-All stakeholders should understand which data are exchanged with the
-environment of the system.
-ALle Daten, die mit dem System ausgetauscht werden
+Alle Daten, die mit dem System ausgetauscht werden
 <img src="business_context.png">
+- Benutzer (Zielgruppe 18-35 Jahre alt) verwenden und interagieren mit der App, um Bilder hochzuladen oder anzusehen
+- Über den App Store wird die App heruntergeladen und installiert
+- Pixlr wird in die App zur Bildbearbeitung integriert
+- Transaktionen, Datenschutz, Abonnements
 
 
 
@@ -162,13 +164,13 @@ ALle Daten, die mit dem System ausgetauscht werden
 
 </div>
 
-Technical interfaces (channels and transmission media) linking your
-system to its environment. In addition a mapping of domain specific
-input/output to the channels, i.e. an explanation which I/O uses which
-channel.
-
+Das System und seine Umgebung, mit der es über technische Schnittstellen verbunden ist.
 
 <img src="technical_context.png">
+- App selbst mit User Interface, Verarbeitung der hochgeladenen Bilder, Zahlung für das Abonnement
+- Benötigt Backend Services um mit dem Server zu verbinden und Datenbank zu verwenden
+- Auch verbunden mit externen Services, wie der Pixlr Bildbearbeitung, die integriert ist in der App
+
 
 <div style="page-break-after: always;"></div>
 

@@ -723,15 +723,20 @@ Mit dem Baum werden diese übersichtlich visualisiert.
 
 </div>
 Qualitätsanforderungen konkretisiert: <br>
-Was mit dem System passiert, wenn ein Reiz im System ankommt. 
+Was mit dem System passiert, wenn ein Reiz im System ankommt. Geordnet nach Priorität (oben ist das wichtigste).
 
 **TODO: more quality scenarios?**
 
-- Leistung: <br> Tester öffnet die App und will eine schnellere Ladezeit zum anschauen der Bilder bis zum nächsten Sprint.
-- Benutzerfreundlichkeit: <br> Ein User will das beim öffnen der App direkt alle wichtigen Features sehen und benutzen können (hoch priorisiert).
 - Datenschutz: <br> Der Teamleiter will den Schutz der User gewährleisten, da es sonst zu rechtlichen Problemen kommen könnte. Dies geschieht mittels implementierung der dazu passenden Liabraries und Funktionen bis zum Ende des Projektes.
+
+- Benutzerfreundlichkeit: <br> Ein User will das beim öffnen der App direkt alle wichtigen Features sehen und benutzen können.
+
+- Fehlerbehandlung: <br> Ein Bildupload schlägt aufgrund von Netzwerkausfällen fehl. Die App sollte dem Benutzer eine klare und verständliche Fehlermeldung anzeigen und den Uploadprozess fortsetzen, wenn die Verbindung wiederhergestellt ist.
+
+- Leistung: <br> Tester öffnet die App und will eine schnellere Ladezeit zum anschauen der Bilder bis zum nächsten Sprint.
+
 - Skalierbarkeit: <br> Die Nutzerzahl steigt plötzlich um das Zehnfache an. Die App sollte in der Lage sein, diese zusätzlichen Nutzeranforderungen zu bewältigen, ohne die Leistung oder Antwortzeiten erheblich zu beeinträchtigen.
-- Fehlerbehandlung: <br> Ein Bildupload schlägt aufgrund von Netzwerkausfällen fehl. Die App sollte dem Benutzer eine klare und verständliche Fehlermeldung anzeigen und den Uploadprozess fortsetzen, wenn die Verbindung wiederhergestellt ist
+
 
 
 <div style="page-break-after: always;"></div>

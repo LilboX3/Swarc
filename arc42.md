@@ -391,77 +391,26 @@ Specifies the internal structure of *building block x.1*.
 
 <div class="formalpara-title">
 
-**Contents**
+**Inhalt**
 
 </div>
-TODO: explain runtime view
+Verhalten und Interaktionen der Blöcke des Systems
+
+## Szenario: Benutzer lädt Bild hoch 
+
 <img src="Runtime_view.png"></img>
 
-The runtime view describes concrete behavior and interactions of the
-system’s building blocks in form of scenarios from the following areas:
+-   Ein Bild wird hochgeladen, indem der eingeloggte Nutzer auf dem
+Interface den Button zum Hochladen tippt. Dann wird vom Client eine Anfrage an den
+Server geschickt, der dann eine Datenbankabfrage auslöst. Dann wird eine Bestätigung über den Upload weitergereicht.
 
--   important use cases or features: how do building blocks execute
-    them?
+## Szenario: Benutzer registriert einen Account
 
--   interactions at critical external interfaces: how do building blocks
-    cooperate with users and neighboring systems?
+<img src="Runtime_view2.png"></img>
 
--   operation and administration: launch, start-up, stop
+-   Ein Nutzer muss sich registrieren. Dabei werden eingegebene Daten vom Client
+entgegengenommen und an den Server gesendet, wo diese validiert werden. Falls die Daten nicht gültig sind, sendet der Server einen Fehler an den Client, was der Nutzer auf seinem Interface sieht. Ansonsten werden die Daten in der Datenbank gespeichert und eine Bestätigung über die erfolgreiche Registrierung zurückgeschickt.
 
--   error and exception scenarios
-
-Remark: The main criterion for the choice of possible scenarios
-(sequences, workflows) is their **architectural relevance**. It is
-**not** important to describe a large number of scenarios. You should
-rather document a representative selection.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should understand how (instances of) building blocks of your system
-perform their job and communicate at runtime. You will mainly capture
-scenarios in your documentation to communicate your architecture to
-stakeholders that are less willing or able to read and understand the
-static models (building block view, deployment view).
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-There are many notations for describing scenarios, e.g.
-
--   numbered list of steps (in natural language)
-
--   activity diagrams or flow charts
-
--   sequence diagrams
-
--   BPMN or EPCs (event process chains)
-
--   state machines
-
--   …
-
-See [Runtime View](https://docs.arc42.org/section-6/) in the arc42
-documentation.
-
-## \<Runtime Scenario 1>
-
--   *\<insert runtime diagram or textual description of the scenario>*
-
--   *\<insert description of the notable aspects of the interactions
-    between the building block instances depicted in this diagram.>*
-
-## \<Runtime Scenario 2>
-
-## …
-
-## \<Runtime Scenario n>
 
 <div style="page-break-after: always;"></div>
 
@@ -576,7 +525,6 @@ Please copy the structure from level 1 for each selected element.
 <div style="page-break-after: always;"></div>
 
 # Cross-cutting Concepts
-TODO: add cross cutting concepts
 <div class="formalpara-title">
 
 **Inhalt**

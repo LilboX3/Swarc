@@ -432,7 +432,7 @@ Dabei kann die Konsistenz nicht immer erfüllt sein, da nicht garantiert ist, da
 
 ## Diagramm
 
-<img src="deployment_view.png"></img>
+<img src="deployment_view.PNG"></img>
 Das Deployment enthält ein Smartphone, was über eine Mobile App mit Integration der Bildbearbeitungssoftware "Pixlr" zum Server und Backup Server verbunden ist. Diese beiden sind mit der Datenbank verbunden, und halten so das gesamte System aufrecht.
 
 <div style="page-break-after: always;"></div>

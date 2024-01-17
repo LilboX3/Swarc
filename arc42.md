@@ -167,9 +167,10 @@ Alle Daten, die mit dem System ausgetauscht werden
 Das System und seine Umgebung, mit der es über technische Schnittstellen verbunden ist.
 
 <img src="technical_context.png">
-- App selbst mit User Interface, Verarbeitung der hochgeladenen Bilder, Zahlung für das Abonnement
-- Benötigt Backend Services um mit dem Server zu verbinden und Datenbank zu verwenden
-- Auch verbunden mit externen Services, wie der Pixlr Bildbearbeitung, die integriert ist in der App
+
+-   App selbst mit User Interface, Verarbeitung der hochgeladenen Bilder, Zahlung für das Abonnement
+-   Benötigt Backend Services um mit dem Server zu verbinden und Datenbank zu verwenden
+-   Auch verbunden mit externen Services, wie der Pixlr Bildbearbeitung, die integriert ist in der App
 
 
 <div style="page-break-after: always;"></div>

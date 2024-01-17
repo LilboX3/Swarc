@@ -406,7 +406,7 @@ Server geschickt, der dann eine Datenbankabfrage auslöst. Dann wird eine Bestä
 
 ## Szenario: Benutzer registriert einen Account
 
-<img src="Runtime_view2.png"></img>
+<img src="Runtime_view2.PNG"></img>
 
 -   Ein Nutzer muss sich registrieren. Dabei werden eingegebene Daten vom Client
 entgegengenommen und an den Server gesendet, wo diese validiert werden. Falls die Daten nicht gültig sind, sendet der Server einen Fehler an den Client, was der Nutzer auf seinem Interface sieht. Ansonsten werden die Daten in der Datenbank gespeichert und eine Bestätigung über die erfolgreiche Registrierung zurückgeschickt.

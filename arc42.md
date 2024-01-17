@@ -23,18 +23,7 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
-Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
-
--   underlying business goals,
-
--   essential features,
-
--   essential functional requirements,
-
--   quality goals for the architecture and
-
--   relevant stakeholders and their expectations
+Alle relevanten Anforderungen, die Softwarearchitekten und Entwickler brücksichtigen sollen.
 
 ## Requirements Overview
 
@@ -44,14 +33,12 @@ architects and development team must consider. These include
 
 </div>
 
-Die App soll 24/7 laufen und verwendbar sein. <br>
-Nutzer sollen sich registrieren können. <br>
-Nutzer sollen sich einloggen können. <br>
-Nutzer sollen Bilder mit Beschreibungen hochladen können. <br>
-Nutzer sollen Bilder kommentieren und liken können. <br>
+1. Die App soll 24/7 laufen und verwendbar sein. <br>
+2. Nutzer sollen sich registrieren können. <br>
+3. Nutzer sollen sich einloggen können. <br>
+4. Nutzer sollen Bilder mit Beschreibungen hochladen können. <br>
+5. Nutzer sollen Bilder kommentieren und liken können. <br>
 
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
 
 ## Quality Goals
 
@@ -91,11 +78,11 @@ to the architecture and its documentation.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
-| *Benutzer* | *\<Contact-1>* | *Individuen die in der App Bilder hochladen, kommentieren und liken.* |
-| *Admin* | *\<Contact-2>* | *Verwalten das Projekt und haben Zugang zu administrativen Funktionen* |
-| *Entwickler* | *\<Contact-3>* | *Das Team, das die App entwickelt und aufrechterhält.* |
-| *Business Stakeholder* | *\<Contact-4>* | *Unternehmensleiter, Manager die in den Erfolg der App investieren* |
-| *Support Teams* | *\<Contact-5>* | *Anfragen und Probleme von Kunden lösen* |
+| *Benutzer* | *\<Benutzer>* | *Individuen die in der App Bilder hochladen, kommentieren und liken.* |
+| *Admin* | *\<Admin>* | *Verwalten das Projekt und haben Zugang zu administrativen Funktionen* |
+| *Entwickler* | *\<Entwickler>* | *Das Team, das die App entwickelt und aufrechterhält.* |
+| *Business Stakeholder* | *\<Stakeholder>* | *Unternehmensleiter, Manager die in den Erfolg der App investieren* |
+| *Support Teams* | *\<Support>* | *Anfragen und Probleme von Kunden lösen* |
 
 <div style="page-break-after: always;"></div>
 
@@ -201,6 +188,7 @@ Das System und seine Umgebung, mit der es über technische Schnittstellen verbun
 **Content**
 
 </div>
+TODO: fix building block view, add <br>
 
 The building block view shows the static decomposition of the system
 into building blocks (modules, components, subsystems, classes,
@@ -406,6 +394,7 @@ Specifies the internal structure of *building block x.1*.
 **Contents**
 
 </div>
+TODO: explain runtime view
 <img src="Runtime_view.png"></img>
 
 The runtime view describes concrete behavior and interactions of the
@@ -477,7 +466,7 @@ documentation.
 <div style="page-break-after: always;"></div>
 
 # Deployment View
-
+TODO: create deployment view
 <div class="formalpara-title">
 
 **Content**
@@ -587,7 +576,7 @@ Please copy the structure from level 1 for each selected element.
 <div style="page-break-after: always;"></div>
 
 # Cross-cutting Concepts
-
+TODO: add cross cutting concepts
 <div class="formalpara-title">
 
 **Content**
@@ -710,59 +699,31 @@ Entscheidung: Eigenes benutzerdefiniertes Abonnementmodell entwickeln<br>
 
 <div class="formalpara-title">
 
-**Content**
+**Inhalt**
 
 </div>
+Alle Qualitätsanforderungen mit einem Baum und Szenarien.
 
-This section contains all quality requirements as quality tree with
-scenarios. The most important ones have already been described in
-section 1.2. (quality goals)
-
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important
-to them, concrete and measurable.
-
-See [Quality Requirements](https://docs.arc42.org/section-10/) in the
-arc42 documentation.
 
 ## Quality Tree
+<div class="formalpara-title">
 
+**Inhalt**
+
+</div>
+Klare und messbare Qualitätsziele, um die gewünschten Eigenschaften des Systems zu definieren.
+Mit dem Baum werden diese übersichtlich visualisiert.
 <img src="quality_tree.png"></img>
 
 ## Quality Scenarios
 
 <div class="formalpara-title">
 
-**Contents**
+**Inhalt**
 
 </div>
-
-Concretization of (sometimes vague or implicit) quality requirements
-using (quality) scenarios.
-
-These scenarios describe what should happen when a stimulus arrives at
-the system.
-
-For architects, two kinds of scenarios are important:
-
--   Usage scenarios (also called application scenarios or use case
-    scenarios) describe the system’s runtime reaction to a certain
-    stimulus. This also includes scenarios that describe the system’s
-    efficiency or performance. Example: The system reacts to a user’s
-    request within one second.
-
--   Change scenarios describe a modification of the system or of its
-    immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change.
+Qualitätsanforderungen konkretisiert: <br>
+Was mit dem System passiert, wenn ein Reiz im System ankommt. 
 
 **TODO: more quality scenarios?**
 
@@ -782,7 +743,7 @@ For architects, two kinds of scenarios are important:
 <div style="page-break-after: always;"></div>
 
 # Glossary
-
+TODO: add important terms
 <div class="formalpara-title">
 
 **Contents**

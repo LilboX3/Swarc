@@ -159,86 +159,10 @@ Das System und seine Umgebung, mit der es über technische Schnittstellen verbun
 
 # Building Block View
 
-<div class="formalpara-title">
-
-**Content**
-
-</div>
-
-The building block view shows the static decomposition of the system
-into building blocks (modules, components, subsystems, classes,
-interfaces, packages, libraries, frameworks, layers, partitions, tiers,
-functions, macros, operations, data structures, …) as well as their
-dependencies (relationships, associations, …)
-
-This view is mandatory for every architecture documentation. In analogy
-to a house this is the *floor plan*.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Maintain an overview of your source code by making its structure
-understandable through abstraction.
-
-This allows you to communicate with your stakeholder on an abstract
-level without disclosing implementation details.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The building block view is a hierarchical collection of black boxes and
-white boxes (see figure below) and their descriptions.
-
-
-**Level 1** is the white box description of the overall system together
-with black box descriptions of all contained building blocks.
-
-**Level 2** zooms into some building blocks of level 1. Thus it contains
-the white box description of selected building blocks of level 1,
-together with black box descriptions of their internal building blocks.
-
-**Level 3** zooms into selected building blocks of level 2, and so on.
-
-
-## Whitebox Overall System
-
-Here you describe the decomposition of the overall system using the
-following white box template. It contains
-
--   an overview diagram
-
--   a motivation for the decomposition
-
--   black box descriptions of the contained building blocks. For these
-    we offer you alternatives:
-
-    -   use *one* table for a short and pragmatic overview of all
-        contained building blocks and their interfaces
-
-    -   use a list of black box descriptions of the building blocks
-        according to the black box template (see below). Depending on
-        your choice of tool this list could be sub-chapters (in text
-        files), sub-pages (in a Wiki) or nested elements (in a modeling
-        tool).
-
--   (optional:) important interfaces, that are not explained in the
-    black box templates of a building block, but are very important for
-    understanding the white box. Since there are so many ways to specify
-    interfaces why do not provide a specific template for them. In the
-    worst case you have to specify and describe syntax, semantics,
-    protocols, error handling, restrictions, versions, qualities,
-    necessary compatibilities and many things more. In the best case you
-    will get away with examples or simple signatures.
 
 ## Level 1
 
-<img src="level1.png"></img>
+<img src="Level1.png"></img>
 
 Motivation  
 Auf Level 1 liegt der Grundbau, der bewusst schlicht und einfach gestaltet ist. Ein Benutzer nutzt die Image Sharing App, die wiederum Teile von Drittanbietern verwendet und eine Verbindung zum Internet herstellt.
@@ -258,7 +182,7 @@ Ein bedeutender Aspekt ist die Integration von Drittanbietern, da die App mögli
 
 ## Level 2
 
-<img src="level2.png"></img>
+<img src="Level2.PNG"></img>
 
 Motivation  
 Fortgeschrittener ist Level 2, da er detailliertere Funktionen der App und des Benutzers aufzeigt. Hier werden die drei Hauptaufgaben der App und ihre gegenseitige Verbindung deutlich.
@@ -276,7 +200,7 @@ Es ist wichtig zu betonen, dass es Administratoren gibt, die spezielle Rechte be
 
 ## Level 3
 
-<img src="level3.png"></img>
+<img src="Level3.PNG"></img>
 
 Motivation  
 Level 3 stellt eine präzise Vorlage für die technische Umsetzung der Anwendung dar. Sie fungiert als Leitfaden für das Projektteam, um die theoretischen Konzepte in die Praxis umzusetzen.

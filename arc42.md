@@ -476,8 +476,8 @@ auch bei unserer App bleiben und nicht frustriert sind.
 # Architecture Decisions
 
 - Bildspeicherung und -lieferung <br>
-Alternative: Bilder in einer Datenbank speichern<br>
-Entscheidung: Bilder in einem Cloud-basierten Speicherdienst (AWS, Google cloud..) lagern<br>
+Alternative: Bilder in einem Cloud-basierten Speicherdienst (AWS, Google cloud..) lagern<br>
+Entscheidung: Bilder in einer Datenbank speichern (Daten selbst managen) <br>
 
 - Integration Software Drittanbieter (Pixlr)<br>
 Alternative: Eigene Bildbearbeitungssoftware entwickeln<br>

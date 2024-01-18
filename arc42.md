@@ -1,24 +1,3 @@
-# 
-
-**About arc42**
-
-arc42, the template for documentation of software and system
-architecture.
-
-Template Version 8.2 EN. (based upon AsciiDoc version), January 2023
-
-Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. See <https://arc42.org>.
-
-<div class="note">
-
-This version of the template contains some help and explanations. It is
-used for familiarization with arc42 and the understanding of the
-concepts. For documentation of your own system you use better the
-*plain* version.
-
-</div>
-
 <div style="page-break-after: always;"></div>
 
 # Introduction and Goals
@@ -44,26 +23,23 @@ Alle relevanten Anforderungen, die Softwarearchitekten und Entwickler brücksich
 
 <div class="formalpara-title">
 
-**1.**
-
-</div>
-Quality: Benutzerfreundlichkeit<br>
+**1.** Benutzerfreundlichkeit<br>
 Motivation: Für Benutzer einfach zu bedienen, für eine positive Benutzererfahrung<br>
+</div>
+
 
 <div class="formalpara-title">
 
-**2.**
+**2.** Leistung<br>
+Motivation: Die App soll schnell laufen und nicht lange laden, flüssig Bilder hochladen 
 </div>
-Quality: Leistung<br>
-Motivation: Die App soll schnell laufen und nicht lange laden, flüssig Bilder hochladen <br>
 
 <div class="formalpara-title">
 
-**3.**
+**3.** Datenschutz<br>
+Motivation: Die Sicherheit und Privatsphäre der Benutzer erhalten, da persönliche Bilder geteilt werden
 
 </div>
-Quality: Datenschutz<br>
-Motivation: Die Sicherheit und Privatsphäre der Benutzer erhalten, da persönliche Bilder geteilt werden<br>
 
 
 ## Stakeholders
@@ -78,9 +54,9 @@ to the architecture and its documentation.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
-| *Benutzer* | *\<Benutzer>* | *Individuen die in der App Bilder hochladen, kommentieren und liken.* |
-| *Admin* | *\<Admin>* | *Verwalten das Projekt und haben Zugang zu administrativen Funktionen* |
-| *Entwickler* | *\<Entwickler>* | *Das Team, das die App entwickelt und aufrechterhält.* |
+| *Benutzer* | *\<User>* | *Individuen die in der App Bilder hochladen, kommentieren und liken.* |
+| *Administrator* | *\<Admin>* | *Verwalten das Projekt und haben Zugang zu administrativen Funktionen* |
+| *Software-Entwickler Team* | *\<Entwickler>* | *Das Team, das die App entwickelt und aufrechterhält.* |
 | *Business Stakeholder* | *\<Stakeholder>* | *Unternehmensleiter, Manager die in den Erfolg der App investieren* |
 | *Support Teams* | *\<Support>* | *Anfragen und Probleme von Kunden lösen* |
 
@@ -101,10 +77,10 @@ to the architecture and its documentation.
 
 <div class="formalpara-title">
 
-**What are constraints**
+**Was sind Constraints**
 
 </div>
-Any requirement that constrains software architects in their freedom of design and implementation decisions or decision about the development process
+Constraints sind Anforderungen, die Softwarearchitekten in ihrer Gestaltungsfreiheit sowie bei Entscheidungen zur Implementierung und Entwicklungsmethodik beschränken.
 
 
 <div style="page-break-after: always;"></div>
@@ -188,7 +164,6 @@ Das System und seine Umgebung, mit der es über technische Schnittstellen verbun
 **Content**
 
 </div>
-TODO: fix building block view, add <br>
 
 The building block view shows the static decomposition of the system
 into building blocks (modules, components, subsystems, classes,
@@ -220,7 +195,6 @@ level without disclosing implementation details.
 The building block view is a hierarchical collection of black boxes and
 white boxes (see figure below) and their descriptions.
 
-![Hierarchy of building blocks](images/05_building_blocks-EN.png)
 
 **Level 1** is the white box description of the overall system together
 with black box descriptions of all contained building blocks.
@@ -231,8 +205,6 @@ together with black box descriptions of their internal building blocks.
 
 **Level 3** zooms into selected building blocks of level 2, and so on.
 
-See [Building Block View](https://docs.arc42.org/section-5/) in the
-arc42 documentation.
 
 ## Whitebox Overall System
 
@@ -264,132 +236,67 @@ following white box template. It contains
     necessary compatibilities and many things more. In the best case you
     will get away with examples or simple signatures.
 
-***\<Overview Diagram>***
+## Level 1
+
+<img src="level1.png"></img>
 
 Motivation  
-*\<text explanation>*
+Auf Level 1 liegt der Grundbau, der bewusst schlicht und einfach gestaltet ist. Ein Benutzer nutzt die Image Sharing App, die wiederum Teile von Drittanbietern verwendet und eine Verbindung zum Internet herstellt.
 
-Contained Building Blocks  
-*\<Description of contained building block (black boxes)>*
-
-Important Interfaces  
-*\<Description of important interfaces>*
-
-Insert your explanations of black boxes from level 1:
-
-If you use tabular form you will only describe your black boxes with
-name and responsibility according to the following schema:
-
-| **Name**         | **Responsibility** |
+Eingebundene Bausteine
+| **Name**         | **Zuständigkeit** |
 |------------------|--------------------|
-| *\<black box 1>* |  *\<Text>*         |
-| *\<black box 2>* |  *\<Text>*         |
+| *Image Sharing App* |  *Die App mit all den dazugehörigen Funktionen*         |
+| *Drittanbieter Applikationen* |  *Fremde Applikationen die beispielsweise Filter bereit stellen*         |
 
-If you use a list of black box descriptions then you fill in a separate
-black box template for every important building block . Its headline is
-the name of the black box.
+Relevante Schnittstellen
+Ein bedeutender Aspekt ist die Integration von Drittanbietern, da die App möglicherweise mit mehreren von ihnen interagieren kann. Dies sollte bei der Umsetzung berücksichtigt werden.
 
-### \<Name black box 1>
 
-Here you describe \<black box 1> according the the following black box
-template:
 
--   Purpose/Responsibility
 
--   Interface(s), when they are not extracted as separate paragraphs.
-    This interfaces may include qualities and performance
-    characteristics.
-
--   (Optional) Quality-/Performance characteristics of the black box,
-    e.g.availability, run time behavior, ….
-
--   (Optional) directory/file location
-
--   (Optional) Fulfilled requirements (if you need traceability to
-    requirements).
-
--   (Optional) Open issues/problems/risks
-
-*\<Purpose/Responsibility>*
-
-*\<Interface(s)>*
-
-*\<(Optional) Quality/Performance Characteristics>*
-
-*\<(Optional) Directory/File Location>*
-
-*\<(Optional) Fulfilled Requirements>*
-
-*\<(optional) Open Issues/Problems/Risks>*
-
-### \<Name black box 2>
-
-*\<black box template>*
-
-### \<Name black box n>
-
-*\<black box template>*
-
-### \<Name interface 1>
-
-…
-
-### \<Name interface m>
 
 ## Level 2
 
-Here you can specify the inner structure of (some) building blocks from
-level 1 as white boxes.
+<img src="level2.png"></img>
 
-You have to decide which building blocks of your system are important
-enough to justify such a detailed description. Please prefer relevance
-over completeness. Specify important, surprising, risky, complex or
-volatile building blocks. Leave out normal, simple, boring or
-standardized parts of your system
+Motivation  
+Fortgeschrittener ist Level 2, da er detailliertere Funktionen der App und des Benutzers aufzeigt. Hier werden die drei Hauptaufgaben der App und ihre gegenseitige Verbindung deutlich.
 
-### White Box *\<building block 1>*
+Eingebundene Bausteine
+| **Name**         | **Zuständigkeit** |
+|------------------|--------------------|
+| *Authentification* |  *Authentisierung von Users mittels Login/Registrierung*         |
+| *Interaction with Other Users* |  *Likes, Kommentare etc.*         |
+| *Upload Image* |  *Nötigen Funktionen für das hochladen von Bildern*         |
 
-…describes the internal structure of *building block 1*.
+Relevante Schnittstellen  
+Es ist wichtig zu betonen, dass es Administratoren gibt, die spezielle Rechte besitzen, um die App zu verwalten.
 
-*\<white box template>*
-
-### White Box *\<building block 2>*
-
-*\<white box template>*
-
-…
-
-### White Box *\<building block m>*
-
-*\<white box template>*
 
 ## Level 3
 
-Here you can specify the inner structure of (some) building blocks from
-level 2 as white boxes.
+<img src="level3.png"></img>
 
-When you need more detailed levels of your architecture please copy this
-part of arc42 for additional levels.
+Motivation  
+Level 3 stellt eine präzise Vorlage für die technische Umsetzung der Anwendung dar. Sie fungiert als Leitfaden für das Projektteam, um die theoretischen Konzepte in die Praxis umzusetzen.
 
-### White Box \<\_building block x.1\_\>
+Eingebundene Bausteine  
+| **Name**         | **Zuständigkeit** |
+|------------------|--------------------|
+| *Register* |  *Registriert den Benutzer, damit er sich anmelden kann*         |
+| *Login* |  *Nachdem sich der User registriert hat kann er sich jederzeit anmelden und somit auf die anderen Funktionen zugreifen*         |
+| *Gallery* |  *In der Galerie besteht die Möglichkeit, auf bereits gespeicherte Fotos zuzugreifen, indem die Funktionen diese aus der Datenbank abrufen*         |
+| *Picture* |  *Enthält Features zur Bearbeitung oder Anpassung von Bildern.*         |
+| *Social_Interaction* |  *Beinhaltet Funktionen zur Interaktionen mit anderen Benutzern*         |
+| *Upload* |  *Lädt die ausgewählten Bilder auf das Profil*         |
+| *Notification* |  *Benachrichtigt den Nutzer darüber, dass es Interaktionen mit seinem Profil gegeben hat.*         |
 
-Specifies the internal structure of *building block x.1*.
 
-*\<white box template>*
+Relevante Schnittstellen 
+Signifikante Klassen sind "Notification" und "Login", da sie bestimmte Entwurfsmuster nachbilden sollen. Die "Notification"-Klasse soll als Beobachter fungieren und den Benutzer benachrichtigen, wenn es Interaktionen mit seinem Profil gibt, während die "Login"-Klasse als Singleton implementiert werden soll, um sicherzustellen, dass kein Benutzer zwei Sitzungen gleichzeitig starten kann.
 
-### White Box \<\_building block x.2\_\>
 
-*\<white box template>*
-
-### White Box \<\_building block y.1\_\>
-
-*\<white box template>*
-
-<div style="page-break-after: always;"></div>
-
-# Runtime View
-
-<div class="formalpara-title">
 
 **Inhalt**
 
@@ -449,21 +356,26 @@ Lösungen und Regulierungen die in mehreren Teilen des Systems wichtig sind, als
 
 - Agiles Development: <br>
 Verwendung agiler Entwicklungsmethoden, um auf Änderungen der Anforderungen flexibel reagieren zu können.
-
+- Versionierung: <br>
+Die Anwendung von Instrumenten, die die Versionierung erleichtern, ermöglicht die effiziente Verwaltung und präzise Rückverfolgung von Softwareänderungen.
 ## *Architecture and Design Patterns*
 
 - Microservice Architektur: <br>
 Anwendung unabhängiger Mikrodienste, damit das Projekt skalierbar und flexibel bleibt.
 Da die Firma international vertreten ist, hat sie genug Ressourcen, um mit Mikrodiensten zu entwickeln.
-
+- Singleton Pattern: <br>
+Der Singleton gewährleistet, dass eine Klasse exakt eine Instanz besitzt und fungiert somit als universeller Einstiegspunkt für jeden Benutzer. 
+Zum Beispiel: Ein Benutzer meldet sich auf sein Profil an.
+- Observer Pattern: <br>
+Das Pattern ermöglicht es einem Objekt, Änderungen mit seinen Abhängigkeiten zu teilen.
+Zum Beispiel erhält ein Benutzer eine Benachrichtigung, wenn sein Bild geliked oder kommentiert wird.
 ## *Safety and Security Concepts*
 
 - Authentifizierung und Authorisation: <br>
 Registrierte Benutzer können sich über ihre Benutzerdaten in ihren Account einloggen.
 
 - Automatische regelmäßige Sicherungen: <br>
-Die App sichert automatisch regelmäßig alle Benutzerdaten, hochgeladenen Bilder und relevanten Metadaten,
-um Datenverlust zu verhindern.
+Die App sichert automatisch regelmäßig alle Benutzerdaten, hochgeladenen Bilder und relevanten Metadaten, um Datenverlust zu verhindern.
 
 ## *User Experience Concepts*
 
@@ -545,39 +457,25 @@ Was mit dem System passiert, wenn ein Reiz im System ankommt. Geordnet nach Prio
 <div style="page-break-after: always;"></div>
 
 # Glossary
-TODO: add important terms
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-The most important domain and technical terms that your stakeholders use
-when discussing the system.
-
-You can also see the glossary as source for translations if you work in
-multi-language teams.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should clearly define your terms, so that all stakeholders
-
--   have an identical understanding of these terms
-
--   do not use synonyms and homonyms
-
-A table with columns \<Term> and \<Definition>.
-
-Potentially more columns in case you need translations.
-
-See [Glossary](https://docs.arc42.org/section-12/) in the arc42
-documentation.
 
 | Term        | Definition        |
 |-------------|-------------------|
-| *\<Term-1>* | *\<definition-1>* |
-| *\<Term-2>* | *\<definition-2>* |
+| *Microservices Architektur* | *Ein architektonisches Design, bei dem eine Anwendung in unabhängige, lose gekoppelte Dienste aufgeteilt wird, die eigenständig entwickelt, bereitgestellt und skaliert werden können.* |
+| *Singleton Pattern* | *Ein Entwurfsmuster, das sicherstellt, dass eine Klasse nur eine Instanz besitzt und einen globalen Zugangspunkt für diese Instanz bietet.* |
+| *Observer Pattern* | *Ein Entwurfsmuster, das es einem Objekt ermöglicht, Änderungen an seinen Abhängigkeiten zu teilen, indem es diesen erlaubt, sich als Beobachter zu registrieren und automatisch aktualisiert zu werden.* |
+| *Authentifizierung und Authorisation* | *Prozesse zur Identifikation von Benutzern (Authentifizierung) und zur Festlegung von Zugriffsrechten basierend auf den Identitätsinformationen (Authorisation).* |
+| *Cloud-basierte Speicherung* | *Speicherung von Daten, in diesem Fall Bilder, in einem externen Cloud-Dienst wie AWS oder Google Cloud, anstatt lokal in einer Datenbank.* |
+| *Abonnementmodell* | *Ein Geschäftsmodell, bei dem Benutzer regelmäßige Zahlungen leisten, um auf bestimmte Funktionen oder Dienste zuzugreifen.* |
+| *Qualitätsanforderungen* | *Spezifische Anforderungen an die Leistung, Sicherheit, Benutzerfreundlichkeit und andere Aspekte des Systems, um bestimmte Qualitätsziele zu erreichen.* |
+| *Datenschutz* | *Maßnahmen und Regulierungen, die sicherstellen, dass die persönlichen Daten der Benutzer geschützt und sicher behandelt werden.* |
+| *Netzwerklatenz* | *Die Verzögerung oder Latenzzeit bei der Übertragung von Daten über ein Netzwerk.* |
+| *Datenkonsistenz* | *Die Gewährleistung, dass Daten in einem verteilten System konsistent sind und keine Inkonsistenzen zwischen verschiedenen Diensten auftreten.* |
+| *Skalierbarkeit* | *Die Fähigkeit eines Systems, mit wachsender Nutzerzahl oder Anforderungen umzugehen, ohne dass die Leistung beeinträchtigt wird.* |
+| *Technische Schulden* | *Eine metaphorische Beschreibung für die zusätzliche Arbeit, die in der Zukunft erforderlich ist, um Probleme oder Kompromisse in der aktuellen Entwicklung zu beheben.* |
+| *Continuous Deployment (CD)* | *Ein Ansatz in der Softwareentwicklung, bei dem Änderungen automatisch und kontinuierlich in die Produktionsumgebung übernommen werden, um eine schnelle und effiziente Bereitstellung zu ermöglichen.* |
+| *Cross-cutting Concerns* | *Aspekte einer Softwareanwendung, die nicht auf einen bestimmten Modul oder eine Funktion beschränkt sind, sondern verschiedene Teile des Systems betreffen, wie z.B. Sicherheit, Protokollierung und Authentifizierung.* |
+| *CAP-Theorem* | *Ein theoretisches Konzept, das besagt, dass es in einem verteilten System nicht gleichzeitig möglich ist, Konsistenz, Verfügbarkeit und Partitionstoleranz vollständig zu gewährleisten. Bei einer Netzwerkpartition müssen Kompromisse eingegangen werden.* |
+| *Backend Services* | *Die serverseitigen Dienste und Funktionen, die für die Verarbeitung von Anfragen, Datenbankzugriffe und andere serverseitige Aufgaben in einer Anwendung verantwortlich sind.* |
+| *Mobile App Interface* | *Die Benutzerschnittstelle oder das Nutzererlebnis, das auf einem mobilen Gerät angezeigt wird, wenn Benutzer mit der Anwendung interagieren.* |
+| *Technical Debt* | *Schulden oder Kompromisse in der Softwareentwicklung, die aufgrund von Entscheidungen getroffen wurden, die kurzfristige Vorteile bieten, aber langfristig zusätzliche Arbeit erfordern.* |
+| *Whitebox/Blackbox* | *Begriffe, die in der Softwarearchitektur verwendet werden, um den Grad der Kenntnisse über die internen Funktionsweisen eines Systems zu beschreiben. Whitebox bezieht sich auf detaillierte Kenntnisse, während Blackbox auf eine externe Sichtweise ohne detaillierte Kenntnisse hinweist.* |

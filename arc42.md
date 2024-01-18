@@ -95,9 +95,9 @@ to the architecture and its documentation.
 - Lizenzierung von Drittanbieter Software:
 <br> Integrierung der Pixlr-Bildbearbeitung in die App
 - Datenschutz:
-<br> App speichert sensible Daten, die von Dritten nur beschränkt sichtbar sein sollen
+<br> App speichert sensible Daten, die von Dritten nur beschränkt sichtbar sein sollen, Profile können privat sein (nur von Freunden sichtbar)
 - Datenverschlüsselung:
-<br> Sensible Daten zwischen den Kommunikationsschnittstellen gehören verschlüsselt
+<br> Sensible Daten zwischen den Kommunikationsschnittstellen gehören verschlüsselt, HTTPS-Verschlüsselung für die Kommunikation zwischen der mobilen App und dem Server
 
 <div class="formalpara-title">
 

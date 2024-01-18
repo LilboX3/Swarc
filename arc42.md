@@ -528,7 +528,7 @@ Was mit dem System passiert, wenn ein Reiz im System ankommt. Geordnet nach Prio
 
 - Fehlerbehandlung: <br> Ein Bildupload schlägt aufgrund von Netzwerkausfällen fehl. Die App sollte dem Benutzer eine klare und verständliche Fehlermeldung anzeigen und den Uploadprozess fortsetzen, wenn die Verbindung wiederhergestellt ist.
 
-- Leistung: <br> Tester öffnet die App und will eine schnellere Ladezeit zum anschauen der Bilder bis zum nächsten Sprint.
+- Leistung: <br> Ein Benutzer öffnet die App. Die App soll alle neuen Bilder und Daten nach einer so kurzen Ladezeit wie möglich anzeigen.
 
 - Skalierbarkeit: <br> Die Nutzerzahl steigt plötzlich um das Zehnfache an. Die App sollte in der Lage sein, diese zusätzlichen Nutzeranforderungen zu bewältigen, ohne die Leistung oder Antwortzeiten erheblich zu beeinträchtigen.
 
